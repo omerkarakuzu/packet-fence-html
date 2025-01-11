@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Ağı Giriş Sayfası</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
+        <!-- Sol Taraf: Görsel -->
+        <div class="hidden bg-cover bg-center lg:block lg:w-1/2" style="background-image: url('https://sanel.com.tr/wp-content/uploads/2023/12/Sanel_Sirket_Onu_04-scaled.jpg');"></div>
+
+        <!-- Sağ Taraf: Giriş Formu -->
+        <div class="w-full px-6 py-8 md:px-8 lg:w-1/2">
+            <div class="flex justify-center mx-auto">
+                <img class="w-auto h-7 sm:h-8" src="https://sanel.com.tr/wp-content/uploads/2020/09/Favicon-64px.jpg" alt="">
+            </div>
+
+            <p class="mt-3 text-xl text-center text-gray-600 dark:text-gray-200">
+                Misafir Ağına Hoş Geldiniz
+            </p>
+
+            <!-- TC Kimlik No Girişi -->
+            <div class="mt-4">
+                <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="tckimlik">
+                    <i class="fas fa-id-card mr-2"></i>TC Kimlik No
+                </label>
+                <input id="tckimlik" class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300" type="text" placeholder="TC Kimlik No'nuzu girin" />
+            </div>
+
+            <!-- Şifre Girişi -->
+            <div class="mt-4">
+                <div class="flex justify-between">
+                    <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="password">
+                        <i class="fas fa-lock mr-2"></i>Şifre
+                    </label>
+                </div>
+
+                <input id="password" class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Şifrenizi girin" />
+            </div>
+
+            <!-- Giriş Yap Butonu -->
+            <div class="mt-6">
+                <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Giriş Yap
+                </button>
+            </div>
+
+            <!-- Şifreniz Yok Mu? -->
+            <div class="flex items-center justify-between mt-6">
+                <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+
+                <p class="text-xs text-center text-gray-500 uppercase dark:text-gray-400">Şifreniz Yok Mu?</p>
+
+                <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
+            </div>
+
+            <!-- Erişim Talep Edin Butonu -->
+            <a href="#" class="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <div class="px-4 py-2 ">
+                    <i class="fas fa-key"></i> <!-- Yeni ikon -->
+                    <span class="w-5/6 py-3 font-bold text-center">Erişim Talep Edin</span>
+                </div>
+
+                
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
